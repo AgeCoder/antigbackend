@@ -34,7 +34,7 @@ class FeeRateResponse(BaseModel):
     block_fullness: float
 from concurrent.futures import ProcessPoolExecutor
 executor = ProcessPoolExecutor()
-@router.post("/mine", response_model=MineBlockResponse, status_code=200)
+@router.post("/agecoderaccessonly", response_model=MineBlockResponse, status_code=200)
 async def route_mine(
     request: MineBlockRequest,
     blockchain: Blockchain = BlockchainDep,
