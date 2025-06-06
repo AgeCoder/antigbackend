@@ -17,6 +17,7 @@ COPY . .
 
 # Expose the port Flask runs on
 EXPOSE 10000
+EXPOSE 3221
 
 # Command to run the app
 CMD ["python", "main.py"]
